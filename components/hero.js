@@ -26,7 +26,7 @@ export function heroNav() {
   <nav id="nav_header">
     <ul class="nav_header">
       <li>
-        <a href="routes/compromise.html">
+        <a href="#">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -44,7 +44,7 @@ export function heroNav() {
         </a>
       </li>
       <li>
-        <a href="routes/my-account.html">
+        <a href="#">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -62,7 +62,7 @@ export function heroNav() {
         </a>
       </li>
       <li>
-        <a href="routes/cart.html">
+        <a href="#">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

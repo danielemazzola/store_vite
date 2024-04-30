@@ -1,4 +1,86 @@
 export const cardsItems = () => {
+  const products = [
+    {
+      name: 'Gafas de Sol',
+      price: 24.99,
+      stars: 4,
+      reviews: 250,
+      seller: 'STORE',
+      image: './public/img/1.jpg'
+    },
+    {
+      name: 'Aretes',
+      price: 15.99,
+      stars: 4,
+      reviews: 250,
+      seller: 'STORE',
+      image: './public/img/2.jpg'
+    },
+    {
+      name: 'Perfumes',
+      price: 199.99,
+      stars: 4,
+      reviews: 250,
+      seller: 'STORE',
+      image: './public/img/3.jpg'
+    },
+    {
+      name: 'Aviones',
+      price: 12.99,
+      stars: 4,
+      reviews: 250,
+      seller: 'STORE',
+      image: './public/img/4.jpg'
+    },
+    {
+      name: 'Tazas',
+      price: 6.99,
+      stars: 4,
+      reviews: 250,
+      seller: 'STORE',
+      image: './public/img/5.jpg'
+    },
+    {
+      name: 'Diamantes',
+      price: 124.99,
+      stars: 4,
+      reviews: 250,
+      seller: 'STORE',
+      image: './public/img/6.jpg'
+    },
+    {
+      name: 'Reloj',
+      price: 125.69,
+      stars: 4,
+      reviews: 250,
+      seller: 'STORE',
+      image: './public/img/7.jpg'
+    },
+    {
+      name: 'Bolsos',
+      price: 24.99,
+      stars: 4,
+      reviews: 250,
+      seller: 'STORE',
+      image: './public/img/8.jpg'
+    },
+    {
+      name: 'Lentes',
+      price: 24.99,
+      stars: 4,
+      reviews: 250,
+      seller: 'STORE',
+      image: './public/img/1.jpg'
+    },
+    {
+      name: 'Flores',
+      price: 15.99,
+      stars: 4,
+      reviews: 250,
+      seller: 'STORE',
+      image: './public/img/1.jpg'
+    }
+  ]
   return `
   <section id="container_cards_items">
   <div class="container_cards_grid">

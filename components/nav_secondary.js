@@ -25,7 +25,7 @@ export const navSecondary = () => {
   <nav class="nav_secondary">
     <ul>
       <li>
-        <a href="">Gaming</a>
+        <a href="#">Gaming</a>
       </li>
       <li><a href="#">Portátiles</a></li>
       <li><a href="#">Componentes</a></li>
