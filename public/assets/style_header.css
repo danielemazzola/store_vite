@@ -1,0 +1,61 @@
+.container_header {
+  width: var(--dani-full);
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--dani-blue-color);
+}
+.logo > a {
+  width: 100px;
+  display: flex;
+}
+.logo > a > img {
+  background-size: cover;
+  width: var(--dani-full);
+}
+.title {
+  display: none;
+}
+.search_bar {
+  display: flex;
+  align-items: center;
+}
+#select_categories {
+  padding: 7px;
+  border-radius: 5px 0 0 5px;
+  width: 170px;
+}
+#form_search {
+  width: 270px;
+  padding: 7.5px;
+  border-radius: 0 5px 5px 0;
+}
+.nav_header {
+  gap: var(--dani-m);
+  margin-right: 10px;
+  display: flex;
+}
+.nav_header > li > a {
+  color: var(--dani-primary-color);
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.nav_header > li a:hover {
+  background-color: var(--dani-primary-color);
+  color: var(--dani-blue-color);
+  transition: all 0.5s;
+}
+
+.count_article {
+  color: white;
+  background-color: var(--dani-blue-color);
+  border: 0.5px solid var(--dani-primary-color);
+  padding: 2px 5px;
+  border-radius: var(--dani-full);
+  position: absolute;
+  translate: 10px 15px;
+}

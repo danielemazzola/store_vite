@@ -1,0 +1,63 @@
+#container_cards {
+  margin: 10px 0 10px 0;
+  width: var(--dani-full);
+  height: 270px;
+  background-color: var(--dani-primary-color);
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+}
+.container_cards {
+  height: 250px;
+  display: flex;
+  padding: 10px;
+  gap: 30px;
+}
+.card {
+  border-radius: 5px;
+  border: 1px solid var(--dani-border-color);
+  width: 235px;
+  height: var(--dani-full);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.card > img {
+  width: var(--dani-full);
+  background-size: cover;
+  border-radius: 5px 5px 0 0;
+}
+.card p {
+  text-align: center;
+  padding-bottom: 25px;
+}
+.card:hover {
+  opacity: 0.7;
+  border-radius: 10px;
+  transition: all 0.1s;
+}
+
+/* Estilos para la barra de desplazamiento */
+/* Riel de la barra */
+::-webkit-scrollbar {
+  width: 5px; /* Anchura de la barra de desplazamiento */
+  height: 5px; /* Altura de la barra de desplazamiento (para scrollbar horizontal) */
+}
+
+/* Estilo del pulgar de la barra */
+::-webkit-scrollbar-thumb {
+  background-color: var(--dani-blue-color); /* Color del pulgar */
+  border-radius: 3px; /* Borde redondeado del pulgar */
+}
+
+/* Estilo del riel de la barra (no visible) */
+::-webkit-scrollbar-track {
+  background-color: #dddddd; /* Color del riel de la barra */
+}
+
+/* Estilo de los botones de la barra (flechas) */
+::-webkit-scrollbar-button {
+  display: none; /* Oculta los botones de la barra de desplazamiento */
+}

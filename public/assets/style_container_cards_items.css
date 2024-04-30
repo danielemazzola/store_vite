@@ -1,0 +1,62 @@
+#container_cards_items {
+  background-color: var(--dani-blue-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container_cards_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 20px 0;
+}
+.card_grid {
+  background-color: var(--dani-primary-color);
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card_grid_img > img {
+  width: 250px;
+  object-fit: contain;
+  background-size: cover;
+}
+.description_card > h3 {
+  text-align: center;
+  margin: 5px 0;
+  text-decoration: overline;
+}
+.description_card,
+.card_grid_img > p {
+  padding: 0 10px;
+  translate: 0 -15px;
+}
+.card_grid:hover {
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+.description_card > span {
+  color: red;
+}
+.description_card > p {
+  font-weight: bold;
+  font-size: var(--dani-l);
+}
+.btn-buy {
+  margin: 10px;
+  border-radius: 5px;
+  background-color: var(--dani-blue-color);
+  display: flex;
+  justify-content: center;
+  color: var(--dani-primary-color);
+  padding: 10px 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.btn-buy:hover {
+  background-color: var(--dani-primary-color);
+  color: var(--dani-blue-color);
+  translate: 1px -2px;
+  transition: all 0.5s;
+}

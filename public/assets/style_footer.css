@@ -1,0 +1,33 @@
+#footer {
+  width: var(--dani-full);
+  padding: var(--dani-l) 0;
+  background-color: var(--dani-primary-color);
+  color: var(--dani-border-color);
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: var(--dani-l);
+}
+.extra {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.extra a {
+  font-weight: bold;
+  color: var(--dani-blue-color);
+}
+.extra a:hover {
+  color: red;
+}
+.powered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.powered > h4 {
+  font-size: var(--dani-m);
+  text-transform: uppercase;
+}

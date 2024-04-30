@@ -1,0 +1,16 @@
+#banner-promo {
+  margin: 0 10px;
+}
+.banner-promo {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.banner-promo img {
+  width: var(--dani-full);
+  display: flex;
+  object-fit: contain;
+  background-size: cover;
+  border-radius: 0px 0px 10px 10px;
+}

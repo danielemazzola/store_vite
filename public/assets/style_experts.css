@@ -1,0 +1,5 @@
+#experts {
+  width: var(--dani-full);
+  padding: 10px;
+  border-bottom: 1px solid var(--dani-border-color);
+}

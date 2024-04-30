@@ -1,0 +1,113 @@
+@media (max-width: 1007px) {
+  .container_header {
+    flex-direction: column;
+    padding: 0 0 20px 0;
+    gap: var(--dani-m);
+    background-color: var(--dani-primary-color);
+    border-bottom: 1px solid var(--dani-blue-color);
+  }
+  .title {
+    display: flex;
+    width: var(--dani-full);
+    height: 100px;
+    position: absolute;
+    color: var(--dani-primary-color);
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dani-blueOpacity-color);
+  }
+  #nav_header {
+    width: var(--dani-full);
+    order: 2;
+  }
+  .nav_header {
+    display: flex;
+    justify-content: space-around;
+  }
+  .nav_header > li a {
+    color: var(--dani-blue-color);
+  }
+  .container {
+    width: var(--dani-full);
+    margin-right: 0;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .search_bar {
+    width: 90%;
+    flex-direction: row-reverse;
+    align-items: end;
+    gap: var(--dani-s);
+    order: 3;
+  }
+  #select_categories {
+    border-radius: 5px;
+  }
+  #form_search {
+    border-radius: 5px;
+  }
+  .logo {
+    width: var(--dani-full);
+  }
+  .logo a {
+    width: var(--dani-full);
+    height: 100px;
+  }
+  .logo a img {
+    object-fit: cover;
+    background-color: var(--dani-blue-color);
+  }
+  .nav_secondary > ul li {
+    display: none;
+  }
+  .nav_secondary > ul li:last-child {
+    display: flex;
+  }
+  .container_cards_grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 825px) {
+  .container_cards_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 550px) {
+  #nav_secondary {
+    gap: var(--dani-s);
+    width: var(--dani-full);
+  }
+  .title {
+    font-size: var(--dani-xl);
+  }
+  .nav_header {
+    flex-direction: column;
+  }
+  .nav_header > ul > li {
+    gap: var(--dani-xs);
+    margin-bottom: var(--dani-s);
+  }
+  .nav_header > li > a > p {
+    display: none;
+  }
+  .nav_header {
+    display: flex;
+    flex-direction: row;
+  }
+  .search_bar {
+    flex-direction: column-reverse;
+  }
+  .container_cards_grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer {
+    flex-direction: column;
+    padding-left: 10px;
+    gap: 10px;
+  }
+}
+@media (max-width: 390px) {
+  #nav_secondary {
+    flex-direction: column-reverse;
+  }
+}
