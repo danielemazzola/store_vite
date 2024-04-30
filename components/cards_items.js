@@ -81,6 +81,7 @@ export const cardsItems = () => {
       image: './public/img/1.jpg'
     }
   ]
+  const divApp = document.querySelector('#app')
   return `
   <section id="container_cards_items">
   <div class="container_cards_grid">
