@@ -17,7 +17,7 @@ export const footer = () => {
     <h4>Repositorio</h4>
     <div class="extra">
       <a
-        href="https://github.com/danielemazzola/store_rtc"
+        href="https://github.com/danielemazzola/store_vite"
         target="_blank"
         rel="noopener"
         >Github</a
