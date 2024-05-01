@@ -1,3 +1,40 @@
+#container_cards_search {
+  display: inline-block;
+}
+.resultSearch {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  align-items: start;
+}
+.resultSearch > h3 {
+  font-size: 25px;
+}
+.resultSearch > p {
+  font-size: 20px;
+}
+.recomendedSearch {
+  padding: 10px;
+  display: flex;
+  align-items: start;
+  gap: 5px;
+}
+.recomendedSearch > h3 {
+  color: var(--dani-primary-color);
+  background-color: var(--dani-blue-color);
+  padding: 2px;
+}
+.recomendedSearch > p {
+  background-color: rgb(182, 140, 1);
+  padding: 2px;
+  color: var(--dani-primary-color);
+  cursor: pointer;
+}
+.recomendedSearch > p:hover {
+  translate: 0 -3px;
+}
 #container_cards {
   margin: 10px 0 10px 0;
   width: var(--dani-full);
