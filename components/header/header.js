@@ -1,11 +1,5 @@
 import './style_header.css'
 import '../../public/assets/style_media_query.css'
-/*
-import '../public/assets/style_banner_promo.css'
-import '../public/assets/style_container_cards.css'
-import '../public/assets/style_container_cards_items.css'
-import '../public/assets/style_footer.css'
-*/
 
 //ARRAYS
 const options = [

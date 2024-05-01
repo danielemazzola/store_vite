@@ -1,98 +1,6 @@
 import './style_container_products.css'
 import '../../public/assets/style_media_query.css'
-
-//ARRAYS
-const arrayProducts = [
-  {
-    name: 'Gafas de Sol',
-    price: 24.99,
-    stars: 4,
-    reviews: 250,
-    seller: 'STORE',
-    image: './img/1.jpg',
-    href: '#'
-  },
-  {
-    name: 'Aretes',
-    price: 15.99,
-    stars: 4,
-    reviews: 250,
-    seller: 'STORE',
-    image: './img/2.jpg',
-    href: '#'
-  },
-  {
-    name: 'Perfumes',
-    price: 199.99,
-    stars: 4,
-    reviews: 250,
-    seller: 'STORE',
-    image: './img/3.jpg',
-    href: '#'
-  },
-  {
-    name: 'Aviones',
-    price: 12.99,
-    stars: 4,
-    reviews: 250,
-    seller: 'STORE',
-    image: './img/4.jpg',
-    href: '#'
-  },
-  {
-    name: 'Tazas',
-    price: 6.99,
-    stars: 4,
-    reviews: 250,
-    seller: 'STORE',
-    image: './img/5.jpg',
-    href: '#'
-  },
-  {
-    name: 'Diamantes',
-    price: 124.99,
-    stars: 4,
-    reviews: 250,
-    seller: 'STORE',
-    image: './img/6.jpg',
-    href: '#'
-  },
-  {
-    name: 'Reloj',
-    price: 125.69,
-    stars: 4,
-    reviews: 250,
-    seller: 'STORE',
-    image: './img/7.jpg',
-    href: '#'
-  },
-  {
-    name: 'Bolsos',
-    price: 24.99,
-    stars: 4,
-    reviews: 250,
-    seller: 'STORE',
-    image: './img/8.jpg',
-    href: '#'
-  },
-  {
-    name: 'Lentes',
-    price: 24.99,
-    stars: 4,
-    reviews: 250,
-    seller: 'STORE',
-    image: './img/1.jpg',
-    href: '#'
-  },
-  {
-    name: 'Flores',
-    price: 15.99,
-    stars: 4,
-    reviews: 250,
-    seller: 'STORE',
-    image: './img/1.jpg'
-  }
-]
+import { arrayProducts } from '../../arrayProducts/array_products.js'
 
 const container = document.querySelector('#container_products_items')
 //CREATE
@@ -129,6 +37,7 @@ for (const arrayProduct of arrayProducts) {
   img.setAttribute('alt', arrayProduct.name)
   p.setAttribute('class', 'card_item_p')
   a.setAttribute('href', arrayProduct.href)
+  a.setAttribute('loading', 'lazy')
   a.setAttribute('class', 'text_special_card')
   divDescriptionCard.setAttribute('class', 'description_card spacing_top')
   btnCard.setAttribute('class', 'btn-buy')
@@ -152,13 +61,4 @@ for (const arrayProduct of arrayProducts) {
   divDescriptionCard.appendChild(pDescription)
   divDescriptionCard.appendChild(spanDescription)
   divCard.appendChild(btnCard)
-
-  /* name: 'Gafas de Sol',
-    price: 24.99,
-    stars: 4,
-    reviews: 250,
-    seller: 'STORE',
-    image: './img/1.jpg' 
-    href: '#'
-    */
 }
