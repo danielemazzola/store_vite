@@ -24,8 +24,6 @@
 .nav_secondary > ul > li a:hover {
   background-color: var(--dani-secondary-color);
 }
-.text_special {
-}
 .text_special > a {
   padding: var(--dani-xs);
   background-color: var(--dani-blue-color);

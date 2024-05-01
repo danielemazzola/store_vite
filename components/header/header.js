@@ -114,7 +114,7 @@ formInput.appendChild(input)
 header.appendChild(nav)
 nav.appendChild(ul)
 
-//ARRAY FOR APPEND
+//ARRAY FOR - APPEND
 //Select -> Options
 for (const op of options) {
   const option = document.createElement('option')

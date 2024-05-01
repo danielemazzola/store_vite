@@ -21,4 +21,4 @@ banner.appendChild(div)
 div.appendChild(a)
 a.appendChild(img)
 
-//ARRAY FOR APPEND
+//ARRAY FOR - APPEND

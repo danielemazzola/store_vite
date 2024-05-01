@@ -30,7 +30,7 @@ divContainer.setAttribute('class', 'container_cards')
 //APPEND
 container.appendChild(divContainer)
 
-//ARRAY FOR APPEND
+//ARRAY FOR - APPEND
 for (const arrayCard of arrayCards) {
   const divCard = document.createElement('div')
   const img = document.createElement('img')

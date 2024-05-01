@@ -53,7 +53,7 @@ pSecond.appendChild(bSecond)
 sectionNav.appendChild(nav)
 nav.appendChild(ulNav)
 
-//ARRAY FOR APPEND
+//ARRAY FOR - APPEND
 for (const navOption of navOptions) {
   const liNav = document.createElement('li')
   const aNav = document.createElement('a')
