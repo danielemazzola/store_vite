@@ -87,12 +87,17 @@
     gap: var(--dani-xs);
     margin-bottom: var(--dani-s);
   }
-  .nav_header > li > a > p {
-    display: none;
+  .nav_header > li > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .nav_header {
-    display: flex;
     flex-direction: row;
+  }
+  .nav_header > ul > li > a {
+    display: flex;
+    flex-direction: column;
   }
   .search_bar {
     flex-direction: column-reverse;
@@ -109,6 +114,9 @@
 @media (max-width: 390px) {
   #nav_secondary {
     flex-direction: column-reverse;
+  }
+  .nav_header > li > a > p {
+    display: none;
   }
   .text_special {
     display: flex;

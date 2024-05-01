@@ -1,0 +1,9 @@
+#banner_promo {
+  margin: 0 10px;
+}
+.banner_promo {
+}
+.banner_promo img {
+  width: var(--dani-full);
+  display: flex;
+}
