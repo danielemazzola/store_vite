@@ -1,4 +1,4 @@
-@media (max-width: 1007px) {
+@media (max-width: 1060px) {
   .container_header {
     flex-direction: column;
     padding: 0 0 20px 0;
@@ -109,5 +109,14 @@
 @media (max-width: 390px) {
   #nav_secondary {
     flex-direction: column-reverse;
+  }
+  .text_special {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    text-align: center;
+  }
+  #form_search {
+    width: 170px;
   }
 }

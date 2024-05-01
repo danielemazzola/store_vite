@@ -1,5 +1,6 @@
 #nav_secondary {
   display: flex;
+  width: var(--dani-full);
   justify-content: space-between;
   padding: 10px;
   margin-top: 5px;
@@ -24,18 +25,20 @@
   background-color: var(--dani-secondary-color);
 }
 .text_special {
+}
+.text_special > a {
+  padding: var(--dani-xs);
   background-color: var(--dani-blue-color);
   color: var(--dani-primary-color);
-  padding: var(--dani-xs);
+  border: 1px solid var(--dani-border-color);
   border-radius: 5px;
   cursor: pointer;
+  transition: all 0.5s;
 }
-.text_special:hover {
+.text_special > a:hover {
   background-color: var(--dani-primary-color);
   color: var(--dani-blue-color);
   border: 1px solid var(--dani-border-color);
-  translate: 1px 3px;
-  transition: all 0.5s;
 }
 .btn {
   border-style: none;

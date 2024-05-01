@@ -1,12 +1,12 @@
-import './public/assets/style_global.css'
-import './public/assets/style_header.css'
-import './public/assets/style_nav_secondary.css'
-import './public/assets/style_experts.css'
-import './public/assets/style_banner_promo.css'
-import './public/assets/style_container_cards.css'
-import './public/assets/style_container_cards_items.css'
-import './public/assets/style_footer.css'
-import './public/assets/style_media_query.css'
+import './style_header.css'
+import '../../public/assets/style_media_query.css'
+/*
+import '../public/assets/style_experts.css'
+import '../public/assets/style_banner_promo.css'
+import '../public/assets/style_container_cards.css'
+import '../public/assets/style_container_cards_items.css'
+import '../public/assets/style_footer.css'
+*/
 
 //ARRAYS
 const options = [
@@ -69,8 +69,7 @@ const navOptions = [
 ]
 
 //CREATE
-const app = document.querySelector('#app')
-const header = document.createElement('header')
+const header = document.querySelector('#header')
 const div = document.createElement('div')
 const a = document.createElement('a')
 const img = document.createElement('img')
@@ -88,7 +87,6 @@ h1.textContent = 'STORE'
 
 //ATTRIBUTES
 header.setAttribute('class', 'container_header')
-header.setAttribute('id', 'init')
 div.setAttribute('class', 'logo')
 a.setAttribute('href', '#')
 img.setAttribute('loading', 'lazy')
@@ -105,7 +103,6 @@ nav.setAttribute('id', 'nav_header')
 ul.setAttribute('class', 'nav_header')
 
 //APPEND
-app.appendChild(header)
 header.appendChild(div)
 div.appendChild(a)
 a.appendChild(img)
