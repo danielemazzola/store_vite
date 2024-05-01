@@ -129,7 +129,6 @@ for (const arrayProduct of arrayProducts) {
   img.setAttribute('alt', arrayProduct.name)
   p.setAttribute('class', 'card_item_p')
   a.setAttribute('href', arrayProduct.href)
-  a.setAttribute('target', '_blank')
   a.setAttribute('class', 'text_special_card')
   divDescriptionCard.setAttribute('class', 'description_card spacing_top')
   btnCard.setAttribute('class', 'btn-buy')
