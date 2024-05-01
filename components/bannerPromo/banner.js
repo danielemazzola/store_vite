@@ -11,7 +11,7 @@ const img = document.createElement('img')
 //ATTRIBUTE
 div.setAttribute('class', 'banner_promo')
 a.setAttribute('href', '#container_cards')
-img.setAttribute('src', '../../img/LevelUpSale.png')
+img.setAttribute('src', './img/LevelUpSale.png')
 img.setAttribute('alt', 'banner promotional day')
 
 //TEXT CONTENT
