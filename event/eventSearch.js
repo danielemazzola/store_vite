@@ -67,6 +67,8 @@ input.addEventListener('change', (e) => {
         wordSearch.textContent = arrayProduct.name
         input.value = arrayProduct.name
         word = arrayProduct.name
+        const scroll = document.querySelector(`#container_cards_search`)
+        scroll.scrollIntoView({ behavior: 'smooth' })
         filterSearch(resultP, arrayProducts, word)
       })
       divRecomended.appendChild(wordRecomended)
