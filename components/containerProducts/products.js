@@ -5,13 +5,22 @@ import { arrayProducts } from '../../arrayProducts/array_products.js'
 const container = document.querySelector('#container_products_items')
 //CREATE
 const divContainer = document.createElement('div')
+const divTitle = document.createElement('div')
+const hTitle = document.createElement('h2')
+const p = document.createElement('p')
 
 //ATTRIBUTE
 divContainer.setAttribute('class', 'container_cards_grid')
+divTitle.setAttribute('class', 'title_cards')
 
 //TEXT CONTENT
+hTitle.textContent = 'Ofertas AZULADAS'
+p.textContent = 'Aquí encontraras las mejores ofertas de nuestro portal web'
 
 //APPEND
+container.appendChild(divTitle)
+divTitle.appendChild(hTitle)
+divTitle.appendChild(p)
 container.appendChild(divContainer)
 
 //ARRAY FOR - APPEND

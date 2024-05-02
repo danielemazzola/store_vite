@@ -1,5 +1,6 @@
 #container_cards_search {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
 }
 .resultSearch {
   padding: 10px;
@@ -20,6 +21,7 @@
   display: flex;
   align-items: start;
   gap: 5px;
+  flex-direction: column;
 }
 .recomendedSearch > h3 {
   color: var(--dani-primary-color);

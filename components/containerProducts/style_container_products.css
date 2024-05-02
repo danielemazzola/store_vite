@@ -1,16 +1,37 @@
 #container_products_items {
   background-color: var(--dani-blue-color);
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#container_products_items_search {
+  display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.container_cards_grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin: 20px 0;
+.title_cards {
+  margin: 40px 10px 10px 10px;
+  color: var(--dani-blue-color);
+  background-color: var(--dani-primary-color);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 20px;
+  gap: 10px;
 }
+.container_cards_grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px 0;
+}
+
 .card_grid {
   background-color: var(--dani-primary-color);
+  border: 1px solid;
   margin: 10px;
   display: flex;
   flex-direction: column;

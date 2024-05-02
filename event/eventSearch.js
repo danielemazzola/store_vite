@@ -10,6 +10,7 @@ const divSeparator = document.createElement('div')
 const divResult = document.createElement('div')
 const divRecomended = document.createElement('div')
 const titleRecomended = document.createElement('h3')
+const divFlex = document.createElement('div')
 const divGrid = document.createElement('div')
 const title = document.createElement('h3')
 const wordSearch = document.createElement('p')
@@ -32,6 +33,7 @@ input.addEventListener('change', (e) => {
   divRecomended.innerHTML = ``
   //ATTRIBUTE
   sectionSearch.setAttribute('id', 'container_cards_search')
+  divFlex.setAttribute('id', 'container_products_items_search')
   divGrid.setAttribute('class', 'container_cards_grid')
   divResult.setAttribute('class', 'resultSearch')
   divRecomended.setAttribute('class', 'recomendedSearch')
@@ -47,7 +49,8 @@ input.addEventListener('change', (e) => {
   divResult.appendChild(title)
   divRecomended.appendChild(titleRecomended)
   divResult.appendChild(wordSearch)
-  sectionSearch.appendChild(divGrid)
+  sectionSearch.appendChild(divFlex)
+  divFlex.appendChild(divGrid)
 
   //ARRAY FOR - APPEND
   returnResult(resultP)
