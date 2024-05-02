@@ -3,9 +3,9 @@ import '../../public/assets/style_media_query.css'
 
 //ARRAYS
 const options = [
-  { value: 'all_categories', text: 'Todas las categorías' },
-  { value: 'blue_days_2024', text: 'Días Azulados 2024' },
-  { value: 'reconditioned', text: 'Reacondicionados' }
+  { value: 'header', text: 'Todas las categorías' },
+  { value: 'container_products_items', text: 'Días Azulados 2024' },
+  { value: 'footer', text: 'Contacto' }
 ]
 const navOptions = [
   {
