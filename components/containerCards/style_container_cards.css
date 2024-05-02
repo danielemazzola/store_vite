@@ -28,9 +28,10 @@
 }
 .recomendedSearch > p {
   background-color: rgb(182, 140, 1);
-  padding: 2px;
+  padding: 2px 4px;
   color: var(--dani-primary-color);
   cursor: pointer;
+  border-radius: 10px;
 }
 .recomendedSearch > p:hover {
   translate: 0 -3px;

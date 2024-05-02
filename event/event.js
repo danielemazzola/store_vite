@@ -1,4 +1,3 @@
-import '../components/containerProducts/style_container_products.css'
 import { arrayProducts } from '../arrayProducts/array_products.js'
 //SERCH FORM IMPUT -- ADD EVENT
 const input = document.querySelector('#form_search')
@@ -16,21 +15,22 @@ const title = document.createElement('h3')
 const wordSearch = document.createElement('p')
 let word = ''
 
-input.addEventListener('keydown', (e) => {
+input.addEventListener('change', (e) => {
+  //ADD LOADING
+  setInterval(() => {
+    const body = document.querySelector('body')
+    body.setAttribute('style', 'cursor:wait;')
+  }, 2000)
   word = e.target.value
   let resultP = []
 
-  if (e.target.value === '') {
+  if (word === '') {
     sectionSearch.innerHTML = ``
     sectionSearch.removeAttribute('class', 'container_cards_grid')
     return (resultP = [])
   }
-
-  resultP = arrayProducts.filter((product) => {
-    return product.name.toLowerCase().includes(e.target.value.toLowerCase())
-  })
   //CONDITIONS FILTER SEARCH
-
+  filterSearch(resultP, arrayProducts, word)
   //ADD SECTION TO SEE THE RESULT OF SEARCH
   divGrid.innerHTML = ``
   divRecomended.innerHTML = ``
@@ -54,7 +54,39 @@ input.addEventListener('keydown', (e) => {
   sectionSearch.appendChild(divGrid)
 
   //ARRAY FOR - APPEND
+  returnResult(resultP)
+  //CONDITION
+  if (resultP.length <= 0) {
+    for (const arrayProduct of arrayProducts) {
+      const wordRecomended = document.createElement('p')
+      wordRecomended.setAttribute(
+        'style',
+        'background-color: green; padding: 2px 4px;'
+      )
+      wordRecomended.textContent = arrayProduct.name
+      wordRecomended.addEventListener('click', () => {
+        divRecomended.innerHTML = ``
+        wordSearch.textContent = arrayProduct.name
+        input.value = arrayProduct.name
+        word = arrayProduct.name
+        filterSearch(resultP, arrayProducts, word)
+      })
+      divRecomended.appendChild(wordRecomended)
+    }
+  }
+})
+//END SERCH FORM IMPUT
 
+//FILTER
+const filterSearch = (resultP, arrayProducts, word) => {
+  resultP = arrayProducts.filter((product) => {
+    return product.name.toLowerCase().includes(word.toLowerCase())
+  })
+  returnResult(resultP)
+}
+
+const returnResult = (resultP) => {
+  divGrid.innerHTML = ``
   for (const arrayProduct of resultP) {
     //CREATE
     const wordRecomended = document.createElement('p')
@@ -108,18 +140,4 @@ input.addEventListener('keydown', (e) => {
     divDescriptionCard.appendChild(spanDescription)
     divCard.appendChild(btnCard)
   }
-  //CONDITION
-  console.log(resultP)
-  if (resultP.length <= 0) {
-    for (const arrayProduct of arrayProducts) {
-      const wordRecomended = document.createElement('p')
-      wordRecomended.setAttribute('style', 'background-color: green;')
-      wordRecomended.textContent = arrayProduct.name
-      wordRecomended.addEventListener('click', () => {
-        input.value = arrayProduct.name
-      })
-      divRecomended.appendChild(wordRecomended)
-    }
-  }
-})
-//END SERCH FORM IMPUT
+}
