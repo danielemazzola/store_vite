@@ -17,10 +17,6 @@ let word = ''
 
 input.addEventListener('change', (e) => {
   //ADD LOADING
-  setInterval(() => {
-    const body = document.querySelector('body')
-    body.setAttribute('style', 'cursor:wait;')
-  }, 2000)
   word = e.target.value
   let resultP = []
 

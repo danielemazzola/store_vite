@@ -8,7 +8,11 @@ const navOptions = [
   { name: 'Smartphone', href: '#', class: '' },
   { name: 'Televisores', href: '#', class: '' },
   { name: 'Hogar tech', href: '#', class: '' },
-  { name: 'Ofertas Días Azuladas', href: '#', class: 'text_special' }
+  {
+    name: 'Ofertas Días Azuladas',
+    href: '#container_products_items',
+    class: 'text_special'
+  }
 ]
 
 const sectionNav = document.querySelector('#nav_secondary')

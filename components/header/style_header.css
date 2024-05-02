@@ -9,6 +9,7 @@
 .logo > a {
   width: 100px;
   display: flex;
+  animation: rotate 40s linear infinite;
 }
 .logo > a > img {
   background-size: cover;
@@ -59,4 +60,12 @@
   border-radius: var(--dani-full);
   position: absolute;
   translate: 10px 15px;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  } /* La rotación inicial es de 0 grados */
+  100% {
+    transform: rotate(360deg);
+  } /* La rotación final es de 360 grados */
 }

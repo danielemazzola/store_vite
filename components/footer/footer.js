@@ -28,6 +28,7 @@ aPowered.setAttribute('loading', 'lazy')
 imgPowered.setAttribute('loading', 'lazy')
 imgPowered.setAttribute('src', './img/logo.png')
 imgPowered.setAttribute('width', '70')
+imgPowered.setAttribute('class', 'rotate')
 imgPowered.setAttribute('alt', 'logo web STORE')
 
 //TEXT CONTENT
