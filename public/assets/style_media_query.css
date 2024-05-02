@@ -53,9 +53,10 @@
     width: var(--dani-full);
     height: 100px;
   }
-  .logo a img {
+  .logo > a > img {
     object-fit: cover;
     background-color: var(--dani-blue-color);
+    animation: none;
   }
   .nav_secondary > ul li {
     display: none;

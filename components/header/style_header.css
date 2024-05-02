@@ -9,11 +9,11 @@
 .logo > a {
   width: 100px;
   display: flex;
-  animation: rotate 40s linear infinite;
 }
 .logo > a > img {
   background-size: cover;
   width: var(--dani-full);
+  animation: rotate 40s linear infinite;
 }
 .title {
   display: none;
