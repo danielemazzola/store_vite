@@ -21,7 +21,7 @@
   display: flex;
   align-items: start;
   gap: 5px;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 .recomendedSearch > h3 {
   color: var(--dani-primary-color);

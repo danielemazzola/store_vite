@@ -26,10 +26,9 @@ input.addEventListener('change', (e) => {
     sectionSearch.removeAttribute('class', 'container_cards_grid')
     return (resultP = [])
   }
-  //CONDITIONS FILTER SEARCH
+  //FILTER SEARCH
   filterSearch(resultP, arrayProducts, word)
   //ADD SECTION TO SEE THE RESULT OF SEARCH
-  divGrid.innerHTML = ``
   divRecomended.innerHTML = ``
   //ATTRIBUTE
   sectionSearch.setAttribute('id', 'container_cards_search')
@@ -45,11 +44,11 @@ input.addEventListener('change', (e) => {
   //APPEND
   father.parentNode.insertBefore(sectionSearch, father)
   sectionSearch.appendChild(divResult)
+  sectionSearch.appendChild(divFlex)
   sectionSearch.appendChild(divRecomended)
   divResult.appendChild(title)
   divRecomended.appendChild(titleRecomended)
   divResult.appendChild(wordSearch)
-  sectionSearch.appendChild(divFlex)
   divFlex.appendChild(divGrid)
 
   //ARRAY FOR - APPEND
@@ -78,14 +77,18 @@ input.addEventListener('change', (e) => {
 
 //FILTER
 const filterSearch = (resultP, arrayProducts, word) => {
+  divGrid.innerHTML = ``
   resultP = arrayProducts.filter((product) => {
     return product.name.toLowerCase().includes(word.toLowerCase())
   })
+  if (resultP.length === 0) {
+    alert('No hay resultados en su busqueda! Mira nuestras sugerencias:')
+  }
   returnResult(resultP)
 }
 
 const returnResult = (resultP) => {
-  divGrid.innerHTML = ``
+  /* divGrid.innerHTML = `` */
   for (const arrayProduct of resultP) {
     //CREATE
     const wordRecomended = document.createElement('p')
