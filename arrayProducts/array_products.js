@@ -22,7 +22,7 @@ export const arrayProducts = [
     price: 199.99,
     stars: 4,
     reviews: 250,
-    seller: 'STORE',
+    seller: 'ROCK THE CODE',
     image: './img/3.jpg',
     href: '#'
   },
@@ -31,7 +31,7 @@ export const arrayProducts = [
     price: 12.99,
     stars: 4,
     reviews: 250,
-    seller: 'STORE',
+    seller: 'ROCK THE CODE',
     image: './img/4.jpg',
     href: '#'
   },
@@ -40,7 +40,7 @@ export const arrayProducts = [
     price: 6.99,
     stars: 4,
     reviews: 250,
-    seller: 'STORE',
+    seller: 'OFFERT',
     image: './img/5.jpg',
     href: '#'
   },
@@ -49,7 +49,7 @@ export const arrayProducts = [
     price: 124.99,
     stars: 4,
     reviews: 250,
-    seller: 'STORE',
+    seller: 'OFFERT',
     image: './img/6.jpg',
     href: '#'
   },
@@ -58,7 +58,7 @@ export const arrayProducts = [
     price: 125.69,
     stars: 4,
     reviews: 250,
-    seller: 'STORE',
+    seller: 'APPLE',
     image: './img/7.jpg',
     href: '#'
   },
@@ -67,7 +67,7 @@ export const arrayProducts = [
     price: 24.99,
     stars: 4,
     reviews: 250,
-    seller: 'STORE',
+    seller: 'APPLE',
     image: './img/8.jpg',
     href: '#'
   },
@@ -76,7 +76,7 @@ export const arrayProducts = [
     price: 24.99,
     stars: 4,
     reviews: 250,
-    seller: 'STORE',
+    seller: 'JUNGLE',
     image: './img/5.jpg',
     href: '#'
   },
@@ -85,7 +85,7 @@ export const arrayProducts = [
     price: 15.99,
     stars: 4,
     reviews: 250,
-    seller: 'STORE',
+    seller: 'JUNGLE',
     image: './img/10.jpg'
   }
 ]

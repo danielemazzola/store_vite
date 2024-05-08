@@ -1,12 +1,7 @@
 import './style_header.css'
 import '../../public/assets/style_media_query.css'
+import { arrayProducts } from '../../arrayProducts/array_products.js'
 
-//ARRAYS
-const options = [
-  { value: 'header', text: 'Todas las categorías' },
-  { value: 'container_products_items', text: 'Días Azulados 2024' },
-  { value: 'footer', text: 'Contacto' }
-]
 const navOptions = [
   {
     name: 'Compromiso',
@@ -110,11 +105,20 @@ header.appendChild(nav)
 nav.appendChild(ul)
 
 //ARRAY FOR - APPEND
-//Select -> Options
-for (const op of options) {
+//Select -> Options -> SELLERS
+const newArraySeller = arrayProducts.map((val) => val.seller)
+// DELETE DUPLICATE
+const updateArray = newArraySeller.filter(
+  (item, index) => newArraySeller.indexOf(item) === index
+)
+const optionInit = document.createElement('option')
+optionInit.setAttribute('value', '')
+optionInit.textContent = 'Elige un seller'
+select.appendChild(optionInit)
+for (const op of updateArray) {
   const option = document.createElement('option')
-  option.setAttribute('value', op.value)
-  option.textContent = op.text
+  option.setAttribute('value', op)
+  option.textContent = op
   select.appendChild(option)
 }
 //Items -> NavBar

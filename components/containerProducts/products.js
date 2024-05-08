@@ -32,6 +32,7 @@ for (const arrayProduct of arrayProducts) {
   const p = document.createElement('p')
   const a = document.createElement('a')
   const b = document.createElement('b')
+  const seller = document.createElement('p')
   const divDescriptionCard = document.createElement('div')
   const hthree = document.createElement('h3')
   const pDescription = document.createElement('p')
@@ -50,6 +51,7 @@ for (const arrayProduct of arrayProducts) {
   a.setAttribute('class', 'text_special_card')
   divDescriptionCard.setAttribute('class', 'description_card spacing_top')
   btnCard.setAttribute('class', 'btn-buy')
+  seller.classList.add('seller')
 
   //TEXT CONTENT
   hthree.textContent = arrayProduct.name
@@ -57,11 +59,12 @@ for (const arrayProduct of arrayProducts) {
   spanDescription.textContent = 'Precio minimo historico'
   btnCard.textContent = 'Comprar'
   a.textContent = 'Ofertas días azulados'
+  seller.textContent = `Seller: ${arrayProduct.seller}`
 
   //APPEND
   divContainer.appendChild(divCard)
   divCard.appendChild(divCardImg)
-  divCardImg.appendChild(img)
+  divCardImg.appendChild(img, p)
   divCardImg.appendChild(p)
   p.appendChild(b)
   b.appendChild(a)
@@ -69,5 +72,6 @@ for (const arrayProduct of arrayProducts) {
   divDescriptionCard.appendChild(hthree)
   divDescriptionCard.appendChild(pDescription)
   divDescriptionCard.appendChild(spanDescription)
+  divDescriptionCard.appendChild(seller)
   divCard.appendChild(btnCard)
 }
