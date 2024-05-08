@@ -59,7 +59,7 @@ for (const arrayProduct of arrayProducts) {
   spanDescription.textContent = 'Precio minimo historico'
   btnCard.textContent = 'Comprar'
   a.textContent = 'Ofertas días azulados'
-  seller.textContent = `Seller: ${arrayProduct.seller}`
+  seller.textContent = `${arrayProduct.seller}`
 
   //APPEND
   divContainer.appendChild(divCard)
