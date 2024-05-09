@@ -32,6 +32,15 @@
   padding: 7.5px;
   border-radius: 0 5px 5px 0;
 }
+#clean {
+  background-color: var(--dani-clean-color);
+  padding: 8px;
+  color: var(--dani-primary-color);
+  margin-left: 5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
 .nav_header {
   gap: var(--dani-m);
   margin-right: 10px;

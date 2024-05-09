@@ -1,4 +1,9 @@
 import { arrayProducts } from '../arrayProducts/array_products.js'
+const searchBar = document.querySelector('.search_bar')
+const clean = document.createElement('button')
+const sectionSearchAll = document.querySelector('#container_cards_search')
+clean.setAttribute('id', 'clean')
+clean.textContent = 'clean filters'
 const input = document.querySelector('#form_search')
 const select = document.querySelector('#select_categories')
 const sectionSearch = document.createElement('section')
@@ -34,7 +39,6 @@ select.addEventListener('change', (e) => {
 
 const returnResult = (newArray) => {
   sectionSearch.innerHTML = ``
-
   const father = document.querySelector('#experts')
   const divFlex = document.createElement('div')
   const divGrid = document.createElement('div')
@@ -106,6 +110,7 @@ const returnResult = (newArray) => {
       a.textContent = 'Ofertas días azulados'
 
       //APPEND
+      searchBar.append(clean)
       divGrid.appendChild(divCard)
       divCard.appendChild(divCardImg)
       divCardImg.appendChild(img)
@@ -121,3 +126,12 @@ const returnResult = (newArray) => {
     }
   }
 }
+
+//CLEAN
+clean.addEventListener('click', () => {
+  const initValue = ``
+  document.querySelector('#formInput').reset()
+  document.querySelector('#formOption').reset()
+  sectionSearch.remove()
+  //searchBar.form.reset()
+})
