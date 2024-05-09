@@ -4,23 +4,32 @@ const select = document.querySelector('#select_categories')
 const sectionSearch = document.createElement('section')
 
 //EVENTS
-input.addEventListener('change', (e) => {
-  const INPUT = e.target.value
-  if (select.value === '') {
-    const result = arrayProducts.filter((val) => val.price <= INPUT)
-    returnResult(result)
-  } else {
-    const result = arrayProducts.filter(
-      (val) => val.price <= INPUT && val.seller === select.value
-    )
-    returnResult(result)
+input.addEventListener('keypress', (e) => {
+  if (e.key === 'Enter') {
+    e.preventDefault()
+    const INPUT = e.target.value
+    if (select.value === '') {
+      const result = arrayProducts.filter((val) => val.price <= INPUT)
+      returnResult(result)
+    } else {
+      const result = arrayProducts.filter(
+        (val) => val.price <= INPUT && val.seller === select.value
+      )
+      returnResult(result)
+    }
   }
 })
 select.addEventListener('change', (e) => {
-  input.value = ``
   const SELECT = e.target.value
-  const result = arrayProducts.filter((val) => val.seller === SELECT)
-  returnResult(result)
+  if (input.value === ``) {
+    const result = arrayProducts.filter((val) => val.seller === SELECT)
+    returnResult(result)
+  } else {
+    const result = arrayProducts.filter(
+      (val) => val.price <= input.value && val.seller === SELECT
+    )
+    returnResult(result)
+  }
 })
 
 const returnResult = (newArray) => {
@@ -50,8 +59,8 @@ const returnResult = (newArray) => {
       'No hay resultados de busqueda, prueba a cambiar el importe.'
     sectionSearch.append(alert)
     setTimeout(() => {
-      sectionSearch.innerHTML = ``
-      sectionSearch.remove()
+      alert.innerHTML = ``
+      //sectionSearch.remove()
     }, 3000)
   } else {
     for (const arrayProduct of newArray) {
